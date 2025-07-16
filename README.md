@@ -25,6 +25,9 @@ DB_DATABASE=laravel_boilerplate
 DB_USERNAME=root
 DB_PASSWORD=
 
+#Publish Spatie permissions
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
 #Run migrations:
 
 php artisan migrate --seed
